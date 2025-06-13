@@ -1,0 +1,78 @@
+mock-app/
+├── backend/
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/com/mockapi/
+│   │   │   │   ├── config/
+│   │   │   │   │   ├── WebSecurityConfig.java
+│   │   │   │   ├── controller/
+│   │   │   │   │   ├── AuthController.java
+│   │   │   │   │   ├── MockController.java
+│   │   │   │   ├── dto/
+│   │   │   │   │   ├── LoginRequest.java
+│   │   │   │   │   ├── LoginResponse.java
+│   │   │   │   │   ├── MockEndpointDto.java
+│   │   │   │   ├── exception/
+│   │   │   │   │   ├── ErrorResponse.java
+│   │   │   │   │   ├── GlobalExceptionHandler.java
+│   │   │   │   ├── model/
+│   │   │   │   │   ├── MockEndpoint.java
+│   │   │   │   │   ├── Role.java
+│   │   │   │   │   ├── User.java
+│   │   │   │   ├── repository/
+│   │   │   │   │   ├── MockEndpointRepository.java
+│   │   │   │   │   ├── UserRepository.java
+│   │   │   │   ├── security/
+│   │   │   │   │   ├── AuthEntryPointJwt.java
+│   │   │   │   │   ├── AuthTokenFilter.java
+│   │   │   │   │   ├── JwtUtils.java
+│   │   │   │   │   ├── UserDetailsImpl.java
+│   │   │   │   │   ├── UserDetailsServiceImpl.java
+│   │   │   │   ├── service/
+│   │   │   │   │   ├── MockService.java
+│   │   │   │   │   ├── MockServiceImpl.java
+│   │   │   │   │   ├── UserService.java
+│   │   │   │   ├── MockApiApplication.java
+│   │   │   ├── resources/
+│   │   │   │   ├── application.properties
+│   │   │   │   ├── data.sql
+│   ├── pom.xml
+│   ├── Dockerfile
+│
+├── frontend/
+│   ├── public/
+│   │   ├── index.html
+│   ├── src/
+│   │   ├── api/
+│   │   │   ├── api.js
+│   │   ├── components/
+│   │   │   ├── auth/
+│   │   │   │   ├── LoginForm.js
+│   │   │   │   ├── RegisterForm.js
+│   │   │   ├── endpoints/
+│   │   │   │   ├── EndpointForm.js
+│   │   │   │   ├── EndpointList.js
+│   │   │   ├── layout/
+│   │   │   │   ├── Header.js
+│   │   │   │   ├── Layout.js
+│   │   │   ├── shared/
+│   │   │   │   ├── Loading.js
+│   │   │   │   ├── PrivateRoute.js
+│   │   ├── contexts/
+│   │   │   ├── AuthContext.js
+│   │   ├── pages/
+│   │   │   ├── Dashboard.js
+│   │   │   ├── Login.js
+│   │   │   ├── Register.js
+│   │   ├── routes/
+│   │   │   ├── AppRouter.js
+│   │   ├── App.js
+│   │   ├── index.js
+│   ├── package.json
+│   ├── Dockerfile
+│
+├── database/
+│   ├── init.sql
+│
+├── docker-compose.yml
+├── README.md
